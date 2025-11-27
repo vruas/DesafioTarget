@@ -7,4 +7,16 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="Data\**" />
+    <EmbeddedResource Remove="Data\**" />
+    <None Remove="Data\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="dados.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>
