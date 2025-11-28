@@ -1,4 +1,4 @@
-# README — Como executar os programas
+#  Como executar os programas
 
 Este projeto contém **3 programas em C#**:
 
