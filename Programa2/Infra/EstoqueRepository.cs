@@ -23,7 +23,8 @@ namespace Programa2.Infra
             }
 
             var json = File.ReadAllText(caminhoArquivo);
-            _data = JsonSerializer.Deserialize<EstoqueData>(json)
+            _data = JsonSerializer.Deserialize<EstoqueData>(json,
+                new JsonSerializerOptions { PropertyNameCaseInsensitive = true})
                 ?? throw new Exception("Erro ao deserializar arquivo JSON.");
         }
 
