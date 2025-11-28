@@ -17,13 +17,13 @@ while (true)
 
 	try
 	{
-        Console.WriteLine("Código do produto: ");
+        Console.Write("Código do produto: ");
 		int codigo = int.Parse(Console.ReadLine());
 
-        Console.WriteLine("Tipo (Entrada/Saída): ");
+        Console.Write("Tipo (Entrada/Saída): ");
 		string tipo = Console.ReadLine();
 
-        Console.WriteLine("Quantidade: ");
+        Console.Write("Quantidade: ");
 		int quantidade = int.Parse(Console.ReadLine());
 
 		var request = new PedidoMovimentacaoDto
